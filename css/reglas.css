@@ -1,0 +1,41 @@
+/* Extra Small devices (landscape phones, 576px and down)*/
+
+@media (max-width: 575px) {
+
+    footer {
+        position: relative;
+
+    }
+    .logo img {
+        display: flex;        
+        /*order: last;*/
+        margin: 0 auto;        
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    footer {
+        position: relative;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    footer {
+        position: relative;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    footer {
+        /*position: fixed;*/
+    }
+}
