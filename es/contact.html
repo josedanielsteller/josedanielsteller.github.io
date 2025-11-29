@@ -32,43 +32,22 @@
 
         <div class="row">
 
-            <!-- COLUMNA #1 -->
+            <div class="col-md-2 col-lg-2 order-lg-1"></div>
 
-            <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center order-lg-1">
+			<div class="col-md-8 col-lg-8 justify-content-center align-items-center order-lg-2" data-aos="fade-in" data-aos-delay="1000">
+				<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+					<input display="none" type="hidden" name="access_key" value="d888e1af-0e79-4569-ab8a-35806a7d7435">
+					<label for="name">Nombre</label>
+					<input type="text" name="name" placeholder="John Doe" required><br><br>
+					<label for="email">Correo</label>
+					<input type="email" name="email" placeholder="johndoe@example.com" required><br><br>
+					<label for="message">Mensaje</label>
+					<textarea name="message" placeholder="Lorem ipsum dolor sit amet" required></textarea>
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+		<div class="col-md-2 col-lg-2 order-lg-3 order-last" style="margin: 50px"></div>
 
-				<!-- ILUSTRACION -->
-
-                <div class="logo text-center" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800">
-                    <lottie-player src="/animdata/globe.json" autoplay>
-                </div>
-            </div>
-
-
-            <!-- COLUMNA #2 -->
-
-            <div class="col-md-6 col-lg-6 order-lg-2 order-last">
-
-				<p class="justificar" data-aos="fade-left" data-aos-delay="1200">La manera mas immediata de contactarme para cualquier asunto personal o profesional es por la red WhatsApp. Ocasionalmente, tambien reviso LinkedIn y Github, y tengo un correo en el servicio Outlook.</p>
-				<p class="justificar">
-					<ul>
-						<li data-aos="fade-left" data-aos-delay="1600">
-							<a href="https://wa.me/50683268653">WhatsApp</a> <span style="color: gray;">(+506 8326 8653)</span>
-						</li>
-						<li data-aos="fade-left" data-aos-delay="1700">
-							<a href="https://www.linkedin.com/in/jos%C3%A9-daniel-steller-vargas-43855b62/">LinkedIn</a> <span style="color: gray;">(José Daniel Steller Vargas)</span>
-						</li>
-						<li data-aos="fade-left" data-aos-delay="1800">
-							<a href="https://github.com/josedanielsteller">GitHub</a> <span style="color: gray;">(josedanielsteller)</span>
-						</li>
-						<li data-aos="fade-left" data-aos-delay="1900">
-							<a href="mailto:josedanielsteller@live.com">Correo electrónico</a> <span style="color: gray;">(josedanielsteller@live.com)</span>
-						</li>
-					</ul>
-				</p>
-				<p class="justificar" data-aos="fade-left" data-aos-delay="2300">Yo tambien acepto llamadas por mi número de WhatsApp.</p>
-            </div>
-
-        </div>
     </section>
 
     <footer>

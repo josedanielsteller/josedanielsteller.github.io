@@ -16,6 +16,9 @@
     <!--  hoja de estilo AOS JS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+	<!-- hoja de estilo Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
 </head>
 
 
@@ -27,8 +30,38 @@
     </header>
 
     <section class="container-fluid bg-light">
-        <h2 class="text-center pt-5 headertext headercolor" data-aos="zoom-in" data-aos-delay="500">Portada</h2>
+        <h2 class="text-center pt-5 headertext headercolor" data-aos="zoom-in" data-aos-delay="500">Proyectos por José Daniel Steller</h2>
         <div class="pt-5"></div>
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide text-center"><a href="neko.html">
+					<img src="/img/neko.png" height="300" />
+					<h2>Traduccion al español de Neko98</h2>
+        			<p>Programa de entretenimiento de 1999</p>
+				</a></div>
+				<div class="swiper-slide text-center"><a href="finita.html">
+					<img src="/img/finita.png" height="300" />
+					<h2>Sitio web simple de "Starry Finita"</h2>
+        			<p>Tambien conocido como: "The Random Site"</p>
+				</a></div>
+				<div class="swiper-slide text-center"><a href="bf.html">
+					<img src="/img/bf.png" height="300" />
+					<h2>Intérprete en Java para programas Brainf***</h2>
+        			<p>Programación con solo 8 carácteres distintos</p>
+				</a></div>
+			</div>
+			<!-- If we need pagination -->
+			<!--<div class="swiper-pagination"></div>-->
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
 
         <div class="row">
 
@@ -77,6 +110,36 @@
     <!-- libreria microinteracciones -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+	<!-- libreria Swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+	<!-- inicializar la libreria Swiper -->
+	<script>
+		const swiper = new Swiper('.swiper', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+
+			// If we need pagination
+			//pagination: {
+			//el: '.swiper-pagination',
+			//},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			// And if we need scrollbar
+			scrollbar: {
+				el: '.swiper-scrollbar',
+			},
+		});
+	</script>
+	
     <!-- libreria animacion AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

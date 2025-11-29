@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Proyectos - Proyectos por José Daniel Steller</title>
+    <title>Intérprete en Java para programas Brainf*** - Proyectos por José Daniel Steller</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -27,38 +27,40 @@
     </header>
 
     <section class="container-fluid bg-light">
-        <h2 class="text-center pt-5 headertext headercolor" data-aos="zoom-in" data-aos-delay="500">Proyectos</h2>
+        <h2 class="text-center pt-5 headertext headercolor" data-aos="zoom-in" data-aos-delay="500">Traduccion al español de Neko98</h2>
         <div class="pt-5"></div>
 
         <div class="row">
 
-            <div class="col-md-2 col-lg-2 order-lg-1"></div>
+            <!-- COLUMNA #1 -->
 
-            <div class="col-md-8 col-lg-8 justify-content-center align-items-center order-lg-2" data-aos="fade-in" data-aos-delay="1000">
+            <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center order-lg-1">
 
-                <div class="filters">
-					<button data-filter="*">Todo</button>
-					<button data-filter=".self">Personal</button>
-					<button data-filter=".pro">Profesional</button>
-					<button data-filter=".edu">Educativo</button>
-				</div>
+                <!-- ILUSTRACION -->
 
-				<!-- Project list -->
-				<div class="project-list">
-					<div class="project-item self"><a href="/es/neko.html"><img src="/img/neko.png" class="img-fluid">Traduccion al español de Neko98</a></div>
-					<div class="project-item self edu"><a href="/es/finita.html"><img src="/img/finita.png" class="img-fluid">Sitio web simple de "Starry Finita"</a></div>
-					<div class="project-item self"><a href="/es/bf.html"><img src="/img/bf.png" class="img-fluid">Intérprete en Java para programas Brainf***</a></div>
-					<div class="project-item pro edu"><a href="/es/meta.html"><img src="/img/meta.png" class="img-fluid">Este portafolio</a></div>
-				</div>
+                <div class="logo text-center" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800">
+                    <img src="/img/finita.png" class="img-fluid">
+                </div>
             </div>
 
-			<div class="col-md-2 col-lg-2 order-lg-3 order-last" style="margin: 50px"></div>
+
+            <!-- COLUMNA #2 -->
+
+            <div class="col-md-6 col-lg-6 order-lg-2 order-last">
+
+                <p class="justificar headertext" data-aos="fade-left" data-aos-delay="1200">
+                    Comienzos humildes en HTML.<br />
+                </p>
+					<p class="justificar" data-aos="fade-left" data-aos-delay="1600">Este sitio fue mi primera experiencia trabajando con HTML y CSS puro, sin la asistencia de un editor WYSIWYG como Web Page Maker.</p>
+					<p class="justificar" data-aos="fade-left" data-aos-delay="2000">Tiene un aspecto simple, semejante a algún sitio del principio de la década 2000, pero me enseño los fundamentales de trabajando directamente con HTML.</p>
+					<p class="justificar" data-aos="fade-left" data-aos-delay="2400">El sitio se puede visitar <a href="https://starryfinita.neocities.org">aquí</a>.</p>
+            </div>
 
         </div>
     </section>
 
     <footer>
-        <p class="text-white izquierda">(c) 2025 José Daniel Steller Vargas -&nbsp;<a href="/es/contact.html">Contáctame</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/jos%C3%A9-daniel-steller-vargas-43855b62/">LinkedIn</a>&nbsp;|&nbsp;<a href="https://github.com/josedanielsteller">GitHub</a>&nbsp;-&nbsp;<a href="/en/proyects.html">English</a></p>
+        <p class="text-white izquierda">(c) 2025 José Daniel Steller Vargas -&nbsp;<a href="/es/contact.html">Contáctame</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/jos%C3%A9-daniel-steller-vargas-43855b62/">LinkedIn</a>&nbsp;|&nbsp;<a href="https://github.com/josedanielsteller">GitHub</a>&nbsp;-&nbsp;<a href="/en/bf.html">English</a></p>
     </footer>
 
 
@@ -73,10 +75,6 @@
 
     <!-- libreria animacion AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-	<!-- libreria acomodación Isotope JS -->
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script src="https://unpkg.com/desandro-matches-selector@2/matches-selector.js"></script>
 
     <!-- inicializar la libreria AOS JS -->
     <script>
@@ -109,27 +107,6 @@
             document.documentElement.scrollTop = 0; //Chrome, Firefox, IE and Opera
         }
     </script>
-
-	<!-- cosas de Isotope -->
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var iso = new Isotope('.project-list', {
-				itemSelector: '.project-item',
-				layoutMode: 'fitRows'
-			});
-
-			var filtersElem = document.querySelector('.filters');
-			filtersElem.addEventListener('click', function (event) {
-				if (!matchesSelector(event.target, 'button')) {
-					return;
-				}
-				var filterValue = event.target.getAttribute('data-filter');
-				iso.arrange({
-					filter: filterValue
-				});
-			});
-		});
-	</script>
 
 </body>
 </html>
